@@ -1,0 +1,8 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "go_default_library",
+    srcs = ["version.go"],
+    importpath = "github.com/th0br0/vault-auth-plugin-example/version",
+    visibility = ["//visibility:public"],
+)
